@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;  /* Variable font supports a range of weights */
+  font-style: normal;
+}
+
+body {
+  font-family:'Inconsolata', monospace;
+  background-image: url(./assets/images/background-desktop.png);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+}
+h6, .form label{
+    color: hsl(252, 6%, 83%);
+}
+.top-head{
+    max-width: 100%;
+    height: auto;
+}
