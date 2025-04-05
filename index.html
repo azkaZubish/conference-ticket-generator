@@ -10,51 +10,63 @@
   <title>Frontend Mentor | Conference ticket generator</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
+  <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  </style>
 </head>
 
 <body>
   <div class="container">
-   <div class="top-head">
-   <img src="./assets/images/logo-full.svg" alt="Logo" width="13%" height="auto">
-   </div>
-   <div>
-    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
-    <h6>  Secure your spot at next year's biggest coding conference.</h6>
-   </div>
-  </div>
-  <div class="form">
-    <form action=""></form>
-    <div>
-     <label for="Avatar">Upload Avatar</label>
-     <input type="file" accept="image/jpg, image/jpeg, image/png" name = "Avatar" id = "Avatar" hidden>
+   <div class="header">
+     <div class="top-head">
+     <img id="logo-full" src="./assets/images/logo-full.svg" alt="Logo">
+     </div>
+     <div>
+     <h1><div>Your Journey to Coding Conf</ div><div>2025 Starts Here!</div></h1>
+     <h5>  Secure your spot at next year's biggest coding conference.</h5>
+     </div>
+    </div>
+   <div class="form">
+     <form action="">
+       <div>
+       <label class="form-label" for="Avatar">Upload Avatar
+         <!-- <input type="file" accept="image/jpg, image/jpeg, image/png" name = "Avatar" id = "Avatar" hidden> -->
+         <div class="avatar-accept-box">
+         <input type="file" accept="image/jpg, image/jpeg, image/png" name = "Avatar" id = "Avatar" hidden>
+         <img class="upload-image" src="./assets/images/icon-upload.svg" alt="">
+         <p>Drag and drop or click to upload</p>
+         </div>
+       </label>
+    </div>
+    <div class="img-info">
+      <!-- <img src="./assets/images/icon-upload.svg" alt="">
+      <p>Drag and drop or click to upload</p> -->
+      <img class="icon-info" src="./assets/images/icon-info.svg" alt="">
+      <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
     </div>
     <div>
-      <img src="./assets/images/icon-upload.svg" alt="">
-      <p>Drag and drop or click to upload</p>
-      <img src="./assets/images/icon-info.svg" alt="">
-      <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+      <label class="form-label" for="name">Full Name</label>
+      <br>
+      <input class="form-input" type="text" id="name" name="name">
     </div>
     <div>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name">
+      <label class="form-label" for="email">Email Address</label>
+      <br>
+      <input class="form-input" type="email" name="email" id="email">
     </div>
     <div>
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email">
+      <label class="form-label" for="gitname">GitHub Username</label>
+      <br>
+      <input class="form-input" type="text" id="gitname" name="gitname">
     </div>
-    <div>
-      <label for="gitname">GitHub Username</label>
-      <input type="text" id="gitname" name="gitname">
-    </div>
-    <button>Generate my Ticket</button>
-  </div>
+      <button class="form-submit-button">Generate my Ticket</button>
+    </form>
+  </div> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Azka Zubish</a>.
+  </div>
   </div>
 </body>
 </html>
