@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   
+  
   <title>Frontend Mentor | Conference ticket generator</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,44 +24,58 @@
      <img id="logo-full" src="./assets/images/logo-full.svg" alt="Logo">
      </div>
      <div>
-     <h1><div>Your Journey to Coding Conf</ div><div>2025 Starts Here!</div></h1>
+     <h1><div>Your Journey to Coding Conf</div><div>2025 Starts Here!</div></h1>
      <h5>  Secure your spot at next year's biggest coding conference.</h5>
      </div>
     </div>
-   <div class="form">
-     <form action="">
+   <div class="form-container">
+     <form action="" class="form">
        <div>
-       <label class="form-label" for="Avatar">Upload Avatar
+       <label class="form-label" for="avatar">Upload Avatar
          <!-- <input type="file" accept="image/jpg, image/jpeg, image/png" name = "Avatar" id = "Avatar" hidden> -->
          <div class="avatar-accept-box">
-         <input type="file" accept="image/jpg, image/jpeg, image/png" name = "Avatar" id = "Avatar" hidden>
+         <input class="avatar-input" type="file" accept="image/jpg, image/jpeg, image/png" name = "avatar" id = "avatar" hidden>
          <img class="upload-image" src="./assets/images/icon-upload.svg" alt="">
-         <p>Drag and drop or click to upload</p>
+         <div class="avatar-upload-instruction">Drag and drop or click to upload </div>
+         <div class="avatar-remove">
+           <button  class="remove-img">Remove Image</button>
+           <button class="change-img">Change Image</button>
+         </div>
          </div>
        </label>
     </div>
-    <div class="img-info">
-      <!-- <img src="./assets/images/icon-upload.svg" alt="">
-      <p>Drag and drop or click to upload</p> -->
+    <div class="img-info" id="avatar-error">
       <img class="icon-info" src="./assets/images/icon-info.svg" alt="">
-      <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+      <span class="span-error">Upload your photo (JPG or PNG, max size: 500KB).</span>
     </div>
     <div>
       <label class="form-label" for="name">Full Name</label>
       <br>
       <input class="form-input" type="text" id="name" name="name">
+      <div class="img-info" hidden>
+        <img class="icon-info" src="./assets/images/icon-info.svg" alt="">
+        <span class="span-error"></span>
+      </div>
     </div>
     <div>
       <label class="form-label" for="email">Email Address</label>
       <br>
-      <input class="form-input" type="email" name="email" id="email">
+      <input class="form-input input-empty-error" type="email" name="email" id="email">
+      <div class="img-info" hidden>
+        <img class="icon-info" src="./assets/images/icon-info.svg" alt="">
+        <span class="span-error"></span>
+      </div>
     </div>
     <div>
       <label class="form-label" for="gitname">GitHub Username</label>
       <br>
       <input class="form-input" type="text" id="gitname" name="gitname">
+      <div class="img-info" hidden>
+        <img class="icon-info" src="./assets/images/icon-info.svg" alt="">
+        <span class="span-error"></span>
+      </div>
     </div>
-      <button class="form-submit-button">Generate my Ticket</button>
+      <button type="submit" class="form-submit-button">Generate my Ticket</button>
     </form>
   </div> 
   <div class="attribution">
@@ -68,5 +83,6 @@
     Coded by <a href="#">Azka Zubish</a>.
   </div>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

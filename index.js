@@ -150,8 +150,7 @@ form.addEventListener('submit', (e) => {
         const formData = {
             name: form.elements.name.value,
             gmail: form.elements.gmail.value,
-            gitname: form.elements.gitname.value,
-            avatar : 
+            gitname: form.elements.gitname.value
         };
         form.submit();
     }
