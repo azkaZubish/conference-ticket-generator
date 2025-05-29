@@ -150,8 +150,10 @@ form.addEventListener('submit', (e) => {
         const formData = {
             name: form.elements.name.value,
             gmail: form.elements.gmail.value,
-            gitname: form.elements.gitname.value
+            gitname: form.elements.gitname.value,
+            avatar : preview.src
         };
-        form.submit();
+        localStorage.setItem('ticketData', JSON.stringify(formData));
+        window.location.href = 'ticket.html';
     }
 });
