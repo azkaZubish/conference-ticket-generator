@@ -12,6 +12,7 @@ let avatar = document.querySelector('.avatar-input');
 let name = document.querySelector('#name');
 let email = document.querySelector('#email');
 let gitname = document.querySelector('#gitname');
+let lastTicket = document.querySelector('#ticketNo');
 
 dropBox.addEventListener('dragover', (e) => {
     e.preventDefault();
@@ -147,11 +148,16 @@ form.addEventListener('submit', (e) => {
     });
     if (isValid) {
         clearErrors();
+        lastTicket = parseInt(localStorage.getItem('lastTicketNo')|| '0',10);
+        lastTicket++;
+        localStorage.setItem('lastTicketNo', lastTicket);
+        const ticketId = `#${String(lastTicket).padStart(6,'0')}`;
         const formData = {
             name: form.elements.name.value,
-            gmail: form.elements.gmail.value,
+            gmail: form.elements.email.value,
             gitname: form.elements.gitname.value,
-            avatar : preview.src
+            avatar : preview.src,
+            ticketNo : ticketId
         };
         localStorage.setItem('ticketData', JSON.stringify(formData));
         window.location.href = 'ticket.html';
