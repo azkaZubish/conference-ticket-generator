@@ -152,12 +152,9 @@ body {
         url(./assets/images/pattern-lines.svg),
         url(./assets/images/pattern-squiggly-line-bottom-desktop.svg),
         url(./assets/images/pattern-squiggly-line-top.svg);
-        /* url(./assets/images/pattern-ticket.svg); */
     background-position: center, top -8% left 4%, right 35% bottom 45%, bottom, bottom -5% left, top 15% right, right 50% bottom 35%;
-
     background-size: 100%, 10%, 10%, 95%, 55%, 28%, 30%;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat;
-    /* background-color: hsl(248, 70%, 10%); */
     background-blend-mode: overlay;
     height: 100vh;
     display: flex;

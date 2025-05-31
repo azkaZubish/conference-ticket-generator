@@ -29,10 +29,6 @@ dropBox.addEventListener('drop', (e) => {
     handleFile(file);
 });
 
-// dropBox.addEventListener('change', () => {
-//     handleFile(fileInput.files[0]);
-// });
-
 fileInput.addEventListener('change', () => {
     handleFile(fileInput.files[0]);
 });
