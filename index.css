@@ -141,7 +141,7 @@ html {
 }
 
 body {
-  padding: 8px 25px;
+  padding: 0.5rem 1.563rem;
   font-family:'Inconsolata', monospace;
   background-image:
        url(./assets/images/background-desktop.png),
@@ -162,8 +162,8 @@ body {
   justify-content: center;
 }
 .container{
-    margin-bottom: 160px;
-    padding: 15px 25px;
+    margin-bottom: 10rem;
+    padding: 0.938rem 1.563rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,24 +171,24 @@ body {
     text-align: center;
 }
 h1{
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 800;
     color: hsl(0, 0%, 100%);
-    padding-bottom: 15px;
+    padding-bottom: 0.938rem;
 }
 h5, .form, .remove-img, .change-img{
     color: hsl(252, 6%, 83%);
 }
 h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  padding-bottom: 27px;
+  padding-bottom: 1.688rem;
 }
 .logo-full{
     width: 27%;
     height: auto;
-    padding-bottom: 30px;
-    margin-top: 55px;
+    padding-bottom: 1.875rem;
+    margin-top: 3.438rem;
 }
 .form-container{ 
   margin: 0 auto;
@@ -199,16 +199,16 @@ h5 {
  width: 100%;
 } */
 .form-label {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 .form-input, .form-submit-button {
-  margin-top: 6px;
-  margin-bottom: 10px;
+  margin-top: 0.375rem;
+  margin-bottom: 0.625rem;
 }
 .img-info {
-  margin-bottom: 10px;
-  font-size: 7px;
+  margin-bottom: 0.625rem;
+  font-size: 0.438rem;
   letter-spacing: 0.5px;
 }
 .icon-info {
@@ -217,48 +217,48 @@ h5 {
   height: 4%;
 }
 .avatar-accept-box {
-  width: 277px;
-  height: 75px;
+  width: 17.313rem;
+  height: 4.688rem;
   border: 0.05px dashed hsl(252, 6%, 83%);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: rgba(135, 132, 164, .17);
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 400;
   text-align: center;
-  margin-top: 6px;
-  margin-bottom: 5px
+  margin-top: 0.375rem;
+  margin-bottom: 0.313rem
 }
 .form-input{
-  width: 265px;
-  height: 18px;
+  width: 16.56rem;
+  height: 1.125rem;
   border: 0.05px solid hsl(252, 6%, 83%);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: rgba(135, 132, 164,.17);
   /* background: rgba(75, 72, 106,0.2); */
   color: hsl(252, 6%, 83%);
   outline: none;
   font-family: 'Inconsolata', monospace;
-  padding: 7px;
+  padding: 0.438rem;
 }
 .upload-image{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 20px;
-  height: 20px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  padding: 0.313rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border: 0.05px solid rgba(135, 132, 164,0.2);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: rgba(135, 132, 164, 0.2);
 }
 .remove-img, .change-img {
   font-family: 'Inconsolata';
   display: none;
   justify-content: center;
-  height: 15px;
-  width: 58px;
+  height: 0.938rem;
+  width: 3.625rem;
   font-size: .7em;
   border: 0.01px solid rgba(135, 132, 164, 0.2);
-  border-radius: 2px;
+  border-radius: 0.125rem;
   background: rgba(135, 132, 164,0.3);
 
 }
@@ -266,14 +266,14 @@ h5 {
   text-decoration: underline;
 }
 .form-submit-button{
-  width: 282px;
-  height: 32px;
+  width: 17.625rem;
+  height: 2rem;
   background: hsl(7, 71%, 60%);
   border: 0.1px solid hsl(7, 71%, 60%);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-family: 'Inconsolata';
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .form-input:hover, .remove-img:hover, .change-img:hover {
   cursor: pointer;
@@ -288,4 +288,82 @@ h5 {
 .form-submit-button:hover {
   cursor: pointer;
   border: 1px solid hsl(7, 87%, 76%);
+}
+/* .mobile-break {
+  display: none;
+} */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Default: show desktop version */
+.desktop-line {
+  display: block;
+}
+.mobile-line {
+  display: none;
+}
+@media (max-width : 1439px){
+  body {
+  padding: 0.5rem 1.563rem;
+  font-family:'Inconsolata', monospace;
+  background-image:
+       url(./assets/images/background-tablet.png),
+       url(./assets/images/pattern-circle.svg),
+       url(./assets/images/pattern-circle.svg),
+       url(./assets/images/pattern-lines.svg),
+       url(./assets/images/pattern-squiggly-line-bottom-desktop.svg),
+       url(./assets/images/pattern-squiggly-line-top.svg);
+  background-position: center, top -8% left 4%, right 35% bottom 45%,bottom, bottom -5% left, top 15% right;
+  
+  background-size: 100%, 10%, 10%, 95%, 55%, 28%;
+  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+  /* background-color: hsl(248, 70%, 10%); */
+  background-blend-mode: overlay;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+  padding: 0.5rem 1.563rem;
+  font-family:'Inconsolata', monospace;
+  background-image:
+       url(./assets/images/background-mobile.png),
+       url(./assets/images/pattern-circle.svg),
+       url(./assets/images/pattern-circle.svg),
+       url(./assets/images/pattern-lines.svg),
+       url(./assets/images/pattern-squiggly-line-bottom-desktop.svg),
+       url(./assets/images/pattern-squiggly-line-top.svg);
+  background-position: center, top -8% left 4%, right 35% bottom 45%,bottom, bottom -5% left, top 15% right;
+  
+  background-size: 100%, 10%, 10%, 95%, 55%, 28%;
+  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+  /* background-color: hsl(248, 70%, 10%); */
+  background-blend-mode: overlay;
+  }
+  h1 {
+    font-size: 1.688rem;
+  }
+  .logo-full {
+    width: 38%;
+    height: auto;
+    padding-bottom: 1.5rem;
+    margin-top: 5.875rem;
+  }
+  /* .mobile-break {
+    display: inline;
+  } */
+  .desktop-line {
+    display: none;
+  }
+  .mobile-line {
+    display: block;
+  }
 }
